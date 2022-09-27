@@ -1,7 +1,7 @@
 import * as model from "./model.js";
 $(document).ready(function () {
   initApp();
-  initListeners();
+  //initListeners();
 });
 function initApp() {
   $(window).on("hashchange", route);
@@ -17,12 +17,17 @@ function route() {
   //   console.log("sub" + subPageID);
 
   if (pageID == "") {
-    model.changePage("home");
+    model.changePage("home", initListeners);
   } else {
-    model.changePage(pageID);
+    model.changePage(pageID, initListeners);
   }
 }
 
 function initListeners() {
-  //$("#submit-login").on("click", swal.fire("You are signed in!"));
+  $("#submitlogin").click((e) => {
+    console.log("click");
+    e.preventDefault();
+    model.fireModal();
+    model.changePage("home", initListeners);
+  });
 }

@@ -158,4 +158,33 @@ footer .footer .contact {
   text-align: center;
 }
 
+.login-box {
+  height: 400px;
+  width: 300px;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 20px;
+  text-align: center;
+}
+.login-box h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.login-box input {
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 5px;
+}
+.login-box button {
+  margin-top: 50px;
+  height: 50px;
+  width: 100px;
+  background-color: #663300;
+  color: white;
+  border-radius: 10px;
+}
+
 /*# sourceMappingURL=styles.css.map */
