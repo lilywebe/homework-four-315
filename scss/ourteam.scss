@@ -1,0 +1,29 @@
+.non-home-hero{
+    height:60px;
+    width:100%;
+    background-color: #663300;
+    color:white;
+    font-size:50px;
+    padding:5px;
+    padding-left:50px;
+}
+
+.look-at-the-team{
+    height:400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:80%;
+    margin: 0 auto;
+    margin-bottom:100px;
+
+    img{
+        height:300px;
+
+    }
+
+    .team-text{
+        width:40%;
+        text-align: center;
+    }
+}

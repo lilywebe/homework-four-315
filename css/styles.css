@@ -58,7 +58,7 @@ nav a {
 
 .happy-customers {
   width: 80%;
-  height: 400px;
+  min-height: 400px;
   margin: 0 auto;
   margin-bottom: 150px;
 }
@@ -66,12 +66,13 @@ nav a {
   text-align: center;
   margin-bottom: 100px;
 }
-.happy-customers .customer-cards {
+.happy-customers .people-cards {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
-.happy-customers .customer-cards .customer-card {
+.happy-customers .people-cards .person-card {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -79,11 +80,15 @@ nav a {
   text-align: center;
   width: 30%;
   margin: 0 auto;
+  margin-top: 40px;
 }
-.happy-customers .customer-cards .customer-card img {
+.happy-customers .people-cards .person-card img {
   margin-top: 20px;
   margin-bottom: 20px;
   height: 100px;
+}
+.happy-customers .people-cards .person-card p {
+  width: 250px;
 }
 
 footer {
@@ -124,6 +129,33 @@ footer .footer .contact {
   justify-content: space-evenly;
   flex-direction: column;
   color: #663300;
+}
+
+.non-home-hero {
+  height: 60px;
+  width: 100%;
+  background-color: #663300;
+  color: white;
+  font-size: 50px;
+  padding: 5px;
+  padding-left: 50px;
+}
+
+.look-at-the-team {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.look-at-the-team img {
+  height: 300px;
+}
+.look-at-the-team .team-text {
+  width: 40%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

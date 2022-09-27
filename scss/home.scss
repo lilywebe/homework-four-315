@@ -30,7 +30,7 @@
 
 .happy-customers{
     width:80%;
-    height:400px;
+    min-height:400px;
     margin: 0 auto;
     margin-bottom:150px;
 
@@ -41,14 +41,15 @@
     
     
 
-    .customer-cards{
+    .people-cards{
 
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        flex-wrap: wrap;
         
 
-        .customer-card{
+        .person-card{
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -56,11 +57,16 @@
             text-align:center;
             width:30%;
             margin: 0 auto;
+            margin-top:40px;
 
             img{
                 margin-top:20px;
                 margin-bottom:20px;
                 height:100px;
+            }
+
+            p{
+                width:250px;
             }
 
         }
