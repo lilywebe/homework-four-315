@@ -1,4 +1,4 @@
-import * as model from "./model";
+import * as model from "./model.js";
 $(document).ready(function () {
   initApp();
   initListeners();
@@ -10,11 +10,11 @@ function initApp() {
 function route() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
-  let pageIDArray = pageID.split("/");
-  pageID = pageIDArray[0];
-  let subPageID = pageIDArray[1];
+  //   let pageIDArray = pageID.split("/");
+  //   pageID = pageIDArray[0];
+  //   let subPageID = pageIDArray[1];
 
-  console.log("sub" + subPageID);
+  //   console.log("sub" + subPageID);
 
   if (pageID == "") {
     model.changePage("home");
@@ -24,5 +24,5 @@ function route() {
 }
 
 function initListeners() {
-  $("#submit-login").on("click", swal.fire("You are signed in!"));
+  //$("#submit-login").on("click", swal.fire("You are signed in!"));
 }

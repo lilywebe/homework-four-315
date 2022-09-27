@@ -30,4 +30,53 @@ nav a {
   padding-right: 10px;
 }
 
+.hero {
+  height: 600px;
+  width: 100%;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  height: 200px;
+  width: 100%;
+  background-color: lightgray;
+}
+footer .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 15px;
+}
+footer .footer h3 {
+  font-size: 18px;
+  color: #663300;
+}
+footer .footer .navigation {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+footer .footer .navigation a {
+  text-decoration: none;
+  color: #663300;
+  margin-bottom: 16px;
+}
+footer .footer .contact {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #663300;
+}
+
 /*# sourceMappingURL=styles.css.map */
