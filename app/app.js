@@ -27,7 +27,8 @@ function initListeners() {
   $("#submitlogin").click((e) => {
     console.log("click");
     e.preventDefault();
-    model.fireModal();
-    model.changePage("home", initListeners);
+    if (model.fireModal()) {
+      model.changePage("home", initListeners);
+    }
   });
 }

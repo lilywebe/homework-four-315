@@ -19,7 +19,9 @@ export function fireModal() {
     Swal.fire("thanks for signing in!");
     $("#username").val("");
     $("#password").val("");
+    return true;
   } else {
     Swal.fire("Please enter a username and password");
+    return false;
   }
 }
