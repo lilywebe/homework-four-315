@@ -22,3 +22,7 @@ function route() {
     model.changePage(pageID);
   }
 }
+
+function initListeners() {
+  $("#submit-login").on("click", swal.fire("You are signed in!"));
+}

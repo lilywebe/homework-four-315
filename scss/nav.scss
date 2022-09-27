@@ -1,0 +1,23 @@
+nav{
+    height:100px;
+    width:100%;
+    background-color:lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+
+
+    .logo{
+        img{
+            height:50px;
+        }
+    }
+
+    a{
+        color:#663300;
+        text-decoration: none;
+        padding-right:10px;
+    }
+    
+}
